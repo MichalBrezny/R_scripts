@@ -23,7 +23,7 @@ r <- as.vector(raster("rasters/r.tif"))
 m <- as.vector(raster("rasters/m.tif"))
 
 #as raster
-rx <- raster("rasters/rxtif")
+rx <- raster("rasters/rx.tif")
 
 ########################
 
@@ -73,14 +73,14 @@ rxm <- as.matrix(rx)
 #dip direction
 ddm <- as.matrix(dipdir, nrow=nrow(rxm), ncol= ncol(rxm), byrow=T)
 dipdir_raster <- raster(ddm, template = rx)
-plot(azimuth_raster)
-writeRaster(azimuth_raster, "azimuth_rast.tif", overwrite =T)
+plot(dipdir_raster)
+writeRaster(dipdir_raster, "dipdir_raster.tif", overwrite =T)
 
 #dip
 dm <- as.matrix(dip, nrow=nrow(rxm), ncol= ncol(rxm), byrow=T)
 dip_raster <- raster(dm, template = rx)
 plot(dip_raster)
-writeRaster(dip_raster, "dip_rast.tif",overwrite =T)
+writeRaster(dip_raster, "dip_raster.tif",overwrite =T)
 
 #end of the script
 
