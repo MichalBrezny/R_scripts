@@ -1,7 +1,7 @@
 # ---
 #
 # title: "Calculate Bedding Dip and Dip Direction (Functional Version)"
-# author: "Original script by unknown, refactored by Gemini"
+# author: "Original script by Michal Brezny, heavily refactored using Gemini"
 # date: "2026-01-15"
 # description: >
 #   This script calculates bedding dip and dip direction using a functional approach.
